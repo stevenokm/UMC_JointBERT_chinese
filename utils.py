@@ -17,12 +17,20 @@ MODEL_CLASSES = {
     'albert': (AlbertConfig, JointAlbert, AlbertTokenizer)
 }
 
+"""
 MODEL_PATH_MAP = {
     'bert': 'bert-base-uncased',
     'distilbert': 'distilbert-base-uncased',
     'albert': 'albert-xxlarge-v1'
 }
+"""
 
+
+MODEL_PATH_MAP = {
+    'bert': 'bert-base-multilingual-cased',
+    'distilbert': 'distilbert-base-multilingual-cased',
+    'albert': 'albert-xxlarge-v1'
+}
 
 def get_intent_labels(args):
     return [label.strip() for label in open(os.path.join(args.data_dir, args.task, args.intent_label_file), 'r', encoding='utf-8')]

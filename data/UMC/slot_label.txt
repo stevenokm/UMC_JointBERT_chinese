@@ -1,0 +1,13 @@
+PAD
+UNK
+O
+B-machine_name
+I-machine_name
+B-yield_time_begin
+I-yield_time_begin
+B-yield_time_end
+I-yield_time_end
+B-period_of_day
+I-period_of_day
+
+

@@ -1,4 +1,5 @@
 UNK
+ask_for_yield
 atis_abbreviation
 atis_aircraft
 atis_aircraft#atis_flight#atis_flight_no

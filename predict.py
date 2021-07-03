@@ -38,7 +38,7 @@ def load_model(pred_config, args, device):
 
     return model
 
-
+'''
 def read_input_file(pred_config):
     lines = []
     with open(pred_config.input_file, "r", encoding="utf-8") as f:
@@ -48,7 +48,16 @@ def read_input_file(pred_config):
             lines.append(words)
 
     return lines
+'''
+def read_input_file(pred_config):
+    lines = []
+    with open(pred_config.input_file, "r", encoding="utf-8") as f:
+        for line in f:
+            
+            words = [word for word in line]
+            lines.append(words)
 
+    return lines
 
 def convert_input_file_to_tensor_dataset(lines,
                                          pred_config,

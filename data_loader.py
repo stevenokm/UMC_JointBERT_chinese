@@ -91,7 +91,8 @@ class JointProcessor(object):
         for i, (text, intent, slot) in enumerate(zip(texts, intents, slots)):
             guid = "%s-%s" % (set_type, i)
             # 1. input_text
-            words = text.split()  # Some are spaced twice
+            #words = text.split()  # Some are spaced twice
+            words = [word for word in text]
             # 2. intent
             intent_label = self.intent_labels.index(intent) if intent in self.intent_labels else self.intent_labels.index("UNK")
             # 3. slot
@@ -118,7 +119,8 @@ class JointProcessor(object):
 
 processors = {
     "atis": JointProcessor,
-    "snips": JointProcessor
+    "snips": JointProcessor,
+    "UMC" : JointProcessor
 }
 
 

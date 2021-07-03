@@ -1,6 +1,14 @@
 PAD
 UNK
 O
+B-machine_name
+I-machine_name
+B-yield_time_begin
+I-yield_time_begin
+B-yield_time_end
+I-yield_time_end
+B-period_of_day
+I-period_of_day
 B-aircraft_code
 B-airline_code
 B-airline_name
@@ -84,7 +92,6 @@ I-meal_description
 B-mod
 B-month_name
 B-or
-B-period_of_day
 B-restriction_code
 I-restriction_code
 B-return_date.date_relative
